@@ -16,7 +16,7 @@ public class SearchingAlgorithms {
 		Arrays.sort(a);
 		int element=scan.nextInt();
 		scan.close();
-		//System.out.println(linearSearch(a, element));
+		System.out.println(linearSearch(a, element));
 		System.out.println(binarySearch(a, element));
 	}
 	public static int linearSearch(int a[],int element)
