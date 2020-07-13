@@ -8,14 +8,14 @@ public class RotateArray {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 			int n=scan.nextInt();
-			int r=scan.nextInt();
+			int k=scan.nextInt();
 			int a[]=new int[n];
 			for(int i=0;i<a.length;i++) {
 				a[i]=scan.nextInt();
 			}
 
 			int temp;
-			for(int i=0;i<r;i++) {
+			for(int i=0;i<k;i++) {
 				temp=a[0];
 				for(int j=0;j<a.length-1;j++) {
 					a[j]=a[j+1];
