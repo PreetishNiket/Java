@@ -8,6 +8,7 @@ public class Anything {
 		// TODO Auto-generated method stub
 		Scanner sca=new Scanner(System.in);
 		int a[];
+		
 	}
 
 }
