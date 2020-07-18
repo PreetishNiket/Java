@@ -19,4 +19,12 @@ public class CheckPalindrome {
 		}
 		scan.close();
 	}
+	public static boolean isPalindrome(String sub) {
+		for(int i=0;i<=sub.length()/2;i++) {
+			if(sub.charAt(i)==sub.length()-i-1) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
