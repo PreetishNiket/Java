@@ -13,7 +13,8 @@ public class SortingAlgorithms {
 			a[i] = scan.nextInt();
 		}
 		// bubbleSort(a);
-		selectionSort(a);
+		//selectionSort(a);
+		insertionSort(a);
 		display(a);
 		scan.close();
 	}
@@ -53,5 +54,9 @@ public class SortingAlgorithms {
 				swap(a, i, min);
 			}
 		}
+	}
+	
+	private static void insertionSort(int [] a) {
+		
 	}
 }
