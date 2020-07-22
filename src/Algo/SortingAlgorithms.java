@@ -25,6 +25,12 @@ public class SortingAlgorithms {
 
 	}
 
+	private static void swap(int[] a, int i, int j) {
+		int temp = a[i];
+		a[i] = a[j];
+		a[j] = temp;
+	}
+
 	private static void bubbleSort(int[] a) {
 		for (int i = 1; i < a.length; i++) {
 			for (int j = 0; j < a.length - i; j++) {
@@ -33,12 +39,6 @@ public class SortingAlgorithms {
 				}
 			}
 		}
-	}
-
-	private static void swap(int[] a, int i, int j) {
-		int temp = a[i];
-		a[i] = a[j];
-		a[j] = temp;
 	}
 
 	private static void selectionSort(int[] a) {
