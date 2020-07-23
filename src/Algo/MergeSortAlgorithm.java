@@ -1,16 +1,42 @@
 package Algo;
 
+import java.util.Scanner;
+
 public class MergeSortAlgorithm {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		int[] a1 = { 10, 20, 30, 40, 50 };
-		int[] a2 = { 15, 25, 30, 45, 55, 60, 70 };
-		int[] ans = mergeTwoSortedArrays(a1, a2);
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		int a[] = new int[n];
+		for (int i = 0; i < a.length; i++) {
+			a[i] = scan.nextInt();
+		}
+//		int[] a1 = { 10, 20, 30, 40, 50 };
+//		int[] a2 = { 15, 25, 30, 45, 55, 60, 70 };
+//		int[] ans = mergeTwoSortedArrays(a1, a2);
+//		for (int val : ans) {
+//			System.out.print(val + " ");
+//		}
+		int lo = 0;
+		int hi = a.length - 1;
+		int[] ans = mergeSort(a, lo, hi);
 		for (int val : ans) {
 			System.out.print(val + " ");
 		}
+	}
+
+	private static int[] mergeSort(int[] a, int lo, int hi) {
+		if (lo == hi) {
+			int base[] = new int[1];
+			base[0] = a[lo];
+			return base;
+		}
+		int mid = (lo + hi) / 2;
+		int[] fh = mergeSort(a, lo, mid);
+		int[] sh = mergeSort(a, mid + 1, hi);
+		int merge[] = mergeTwoSortedArrays(fh, sh);
+		return merge;
 
 	}
 
