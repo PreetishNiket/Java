@@ -24,6 +24,7 @@ public class MergeSortAlgorithm {
 		for (int val : ans) {
 			System.out.print(val + " ");
 		}
+		scan.close();
 	}
 
 	private static int[] mergeSort(int[] a, int lo, int hi) {
