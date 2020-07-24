@@ -15,11 +15,17 @@ public class QuickSortAlgorithm {
 		int lo = 0;
 		int hi = a.length - 1;
 		quickSort(a, lo, hi);
+		for(int val:a) {
+			System.out.print(val+" ");
+		}
+		scan.close();
 	}
 
 	private static void quickSort(int[] a, int lo, int hi) {
 		// base case
-
+		if(lo>=hi) {
+			return;
+		}
 		int mid = (lo + hi) / 2;
 		int left = lo;
 		int right = hi;
