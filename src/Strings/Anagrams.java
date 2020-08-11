@@ -17,6 +17,7 @@ public class Anagrams {
 				}
 			}
 		}
+		int count2=0;
 	}
 
 }
