@@ -50,7 +50,7 @@ public class StackusingArrays {
 		}
 		public void display() {
 			for(int i=this.top;i>=0;i--) {
-				System.out.println(this.data[i]);
+				System.out.print(this.data[i]+",");
 			}
 			System.out.println("END");
 		}
