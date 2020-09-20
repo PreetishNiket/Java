@@ -14,5 +14,8 @@ public class StackusingArrays {
 			this.data=new int[capacity];
 			this.top=-1;
 		}
+		public int size() {
+			return this.top+1;
+		}
 		
 }
